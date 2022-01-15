@@ -24,6 +24,7 @@ if [ $? -eq 0 ]; then
     touch /etc/dnsmasq.d/unlock.conf
     echo "server=$2" > /etc/dnsmasq.d/unlock.conf
     echo "server=$3" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/fast.com/$1" >> /etc/dnsmasq.d/unlock.conf
     echo "server=/netflix.ca/$1" >> /etc/dnsmasq.d/unlock.conf
     echo "server=/netflix.com/$1" >> /etc/dnsmasq.d/unlock.conf
     echo "server=/netflix.net/$1" >> /etc/dnsmasq.d/unlock.conf
@@ -35,6 +36,16 @@ if [ $? -eq 0 ]; then
     echo "server=/nflxsearch.net/$1" >> /etc/dnsmasq.d/unlock.conf
     echo "server=/nflxso.net/$1" >> /etc/dnsmasq.d/unlock.conf
     echo "server=/nflxvideo.net/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest1.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest2.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest3.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest4.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest5.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest6.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest7.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest8.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest9.com/$1" >> /etc/dnsmasq.d/unlock.conf
+    echo "server=/netflixdnstest10.com/$1" >> /etc/dnsmasq.d/unlock.conf
     
     systemctl restart dnsmasq
     echo "dnsmasq启动成功"
