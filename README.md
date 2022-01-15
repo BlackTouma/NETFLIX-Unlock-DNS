@@ -6,7 +6,7 @@ wget https://github.com/BlackTouma/NETFLIX-Unlock-DNS/raw/main/unlock.sh
 
 chmod +x unlock.sh
 
-./unlock.sh x.x.x.x 1.1.1.1 8.8.8.8
+./unlock.sh x.x.x.x 208.67.222.2 208.67.220.2
 
 
 chattr +i /etc/resolv.conf	#DNS上锁
